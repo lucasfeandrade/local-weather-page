@@ -1,0 +1,51 @@
+body {
+    background-color: dodgerblue;
+}
+
+.flexcontainer {
+    background-color: white;
+    border-radius: 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#temperature {
+    font-size: 1.5em;
+    font-family: 'Chivo', sans-serif;
+}
+
+#city {
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.sun {
+    margin: 50px;
+    color: orange;
+    animation: sunMove 6s 0s infinite linear;
+}
+
+i {
+    margin: 20px;
+    animation: iconScale 2s 0s infinite linear;
+}
+
+@keyframes sunMove {
+    0% {color: orange; transform:  rotate(0turn) scale(2.3);}
+    50% {color: red; transform: rotate(0.5turn) scale(2.5);}
+    100% {color: orange; transform: rotate(1turn) scale(2.3);}
+}
+
+@keyframes iconScale {
+    0% {transform: scale(2.8);}
+    50% { transform: scale(3);}
+    100% {transform: scale(2.8);}
+}
+
