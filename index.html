@@ -2,26 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>Random Quotes Machine</title>
+    <title>Weather Project FreeCodeSchool</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/weather-icons.css">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Sansita" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
 </head>
 <body>
-    <div class="flexcontainer">
+    <div class="col-2"></div>
+    <div class="flexcontainer col-8">
+        <i id="weatherIcon" aria-hidden="true"></i>
         <div id="city"></div>
         <div id="temperature"></div>
     </div>
-    <script src="./script.js"></script>
-
+    <div class="col-2"></div>
+    
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>
