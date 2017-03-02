@@ -1,11 +1,27 @@
 body {
-    background-color: dodgerblue;
+    background-color: lightgreen;
+}
+
+@media only screen and (max-width: 500px) {
+    .text {
+        font-size: 12px;
+        font-family: 'Chivo', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .text {
+        font-size: 7px;
+        font-family: 'Chivo', sans-serif;
+    }
 }
 
 .flexcontainer {
     background-color: white;
     border-radius: 10px;
     margin-top: 10em;
+    width: auto;
+    height: auto;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row /* works with row or column */
@@ -15,19 +31,20 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     opacity: 0;
-    animation: weatherBoxDelay 2s 1s linear forwards; 
+    animation: weatherBoxDelay 0.5s 1.8s linear forwards; 
+    border-width: 1px;
+    border-style: grey;
+    border-color: deepskyblue;
 }
 
-
-
-#temperature {
-    font-size: 1.5em;
-    font-family: 'Chivo', sans-serif;
+@media only screen and (min-width: 500px) {
+    .text {
+        font-size: 1.5em;
+        font-family: 'Chivo', sans-serif;
+    }
 }
 
 #city {
-    font-family: 'Chivo', sans-serif;
-    font-size: 1.5em;
     margin: 2em;
 }
 
@@ -95,7 +112,6 @@ i {
 
 @keyframes jello {
   from, 11.1%, to {
-    opacity: 1;
     transform: none;
   }
 
@@ -125,6 +141,11 @@ i {
 
   88.8% {
     transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    opacity: 1;
+      
+  }
+  100% {
+    opacity: 1;
   }
 }
 
